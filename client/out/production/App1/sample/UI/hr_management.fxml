@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmployeeManagement">
+   <children>
+      <SplitPane dividerPositions="0.3737024221453287" layoutX="7.0" layoutY="53.0" prefHeight="334.0" prefWidth="716.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="errorLabel" layoutX="21.0" layoutY="201.0" prefHeight="17.0" prefWidth="223.0" textFill="RED" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="332.0" prefWidth="426.0">
+               <children>
+                  <TableView fx:id="table" layoutY="45.0" prefHeight="287.0" prefWidth="444.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="38.0" text="ID" />
+                      <TableColumn fx:id="surnameColumn" prefWidth="104.0" text="Фамилия" />
+                      <TableColumn fx:id="nameColumn" prefWidth="94.0" text="Имя" />
+                        <TableColumn fx:id="patronColumn" prefWidth="110.0" text="Отчество" />
+                        <TableColumn fx:id="birthColumn" prefWidth="96.0" text="Дата рождения" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="addButton" layoutX="45.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Добавить" />
+                  <Button fx:id="chooseBtn" layoutX="187.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Выбрать" />
+                  <Button fx:id="deleteButton" layoutX="323.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Удалить" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="251.0" layoutY="15.0" text="Управление кадрами">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="14.0" layoutY="65.0" promptText="Поиск" />
+      <RadioButton fx:id="FioCheckbox" layoutX="14.0" layoutY="102.0" mnemonicParsing="false" text="по ФИО" />
+      <RadioButton fx:id="posCheckbox" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" text="по табельному номеру" />
+      <RadioButton fx:id="alphabetSortChB" layoutX="14.0" layoutY="193.0" mnemonicParsing="false" text="по алфавиту" />
+      <RadioButton fx:id="dateSortChB" layoutX="14.0" layoutY="218.0" mnemonicParsing="false" text="по дате рождения" />
+      <Button fx:id="okSearch" layoutX="173.0" layoutY="65.0" mnemonicParsing="false" text="Ок" />
+      <Separator layoutX="14.0" layoutY="158.0" prefWidth="200.0" />
+      <Label layoutX="14.0" layoutY="168.0" text="Сортировать сотрудников" />
+      <Button fx:id="okSort" layoutX="173.0" layoutY="164.0" mnemonicParsing="false" text="Ок" />
+      <Button fx:id="BackButton" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" text="Назад" />
+   </children>
+</AnchorPane>

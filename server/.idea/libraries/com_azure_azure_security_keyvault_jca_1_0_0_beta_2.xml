@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.azure:azure-security-keyvault-jca:1.0.0-beta.2" type="repository">
+    <properties maven-id="com.azure:azure-security-keyvault-jca:1.0.0-beta.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/azure/azure-security-keyvault-jca/1.0.0-beta.2/azure-security-keyvault-jca-1.0.0-beta.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

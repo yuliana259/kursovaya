@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUp">
+<children>
+    <Label fx:id="enterLabel" layoutX="328.0" layoutY="140.0" prefHeight="51.0" prefWidth="204.0" text="Регистрация" textAlignment="CENTER">
+        <font>
+            <Font size="35.0" />
+        </font>
+    </Label>
+    <TextField id="loginEntry" fx:id="loginEntry" layoutX="328.0" layoutY="191.0" prefHeight="31.0" prefWidth="193.0" promptText="Введите логин" />
+    <PasswordField id="passwordEntry" fx:id="passwordEntry" layoutX="328.0" layoutY="228.0" prefHeight="31.0" prefWidth="178.0" promptText="Введите пароль" />
+    <ImageView id="appPicture" fx:id="appImage" disable="true" fitHeight="160.0" fitWidth="304.0" layoutX="14.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../pictures/hr.png" />
+        </image>
+    </ImageView>
+    <Label id="appLabel" fx:id="appLabel" layoutX="42.0" layoutY="38.0" text="Приложение по управлению персоналом на предприятии">
+        <font>
+            <Font name="System Bold Italic" size="18.0" />
+        </font>
+    </Label>
+    <Button fx:id="signButton" layoutX="328.0" layoutY="267.0" mnemonicParsing="false" text="Зарегистрироваться" />
+</children>
+</Pane>

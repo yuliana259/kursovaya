@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmployeeEdit">
+    <children>
+        <Label fx:id="windowEditLabel" layoutX="145.0" layoutY="8.0" prefHeight="30.0" prefWidth="327.0" text="Редактировать сотрудника">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="surnameEditLabel" layoutX="14.0" layoutY="135.0" prefHeight="25.0" prefWidth="135.0" promptText="Фамилия" />
+        <TextField fx:id="nameEditLabel" layoutX="172.0" layoutY="135.0" promptText="Имя" />
+        <TextField fx:id="patronEditLabel" layoutX="345.0" layoutY="135.0" promptText="Отчество" />
+        <TextField fx:id="idEditField" editable="false" layoutX="446.0" layoutY="11.0" promptText="Табельный номер" />
+        <ChoiceBox fx:id="locationEditField" layoutX="190.0" layoutY="219.0" prefWidth="150.0" />
+        <Label layoutX="54.0" layoutY="408.0" text="Должность">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="86.0" layoutY="219.0" text="Гражданство">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="familyEditField" layoutX="190.0" layoutY="251.0" prefWidth="150.0" />
+        <Label layoutX="24.0" layoutY="376.0" text="Подразделение">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="subCategoryEdit" layoutX="155.0" layoutY="376.0" prefWidth="150.0" />
+        <Label layoutX="21.0" layoutY="251.0" text="Семейное положение">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="positionEdit" layoutX="155.0" layoutY="408.0" prefWidth="150.0" />
+        <Label layoutX="24.0" layoutY="320.0" text="Пол">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="femChBEdit" layoutX="61.0" layoutY="310.0" mnemonicParsing="false" text="Женский">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="menChBEdit" layoutX="60.0" layoutY="335.0" mnemonicParsing="false" text="Мужской">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <Separator layoutX="-14.0" layoutY="173.0" prefHeight="3.0" prefWidth="621.0" />
+        <Label layoutX="125.0" layoutY="439.0" text="Дата приема">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="67.0" layoutY="187.0" text="Дата рождения">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="276.0" prefHeight="30.0" prefWidth="249.0" text="Номер социального страхования" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="insuranceEdit" layoutX="277.0" layoutY="279.0" prefHeight="25.0" prefWidth="242.0" promptText="Номер соц.стахования" />
+        <Separator layoutX="3.0" layoutY="366.0" prefHeight="3.0" prefWidth="602.0" />
+        <Label layoutX="25.0" layoutY="473.0" text="Дата окончания контракта">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="saveButtonEdit" layoutX="263.0" layoutY="526.0" mnemonicParsing="false" text="Сохранить">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="backButtonEdit" layoutX="495.0" layoutY="44.0" mnemonicParsing="false" text="Назад" />
+      <TextField fx:id="birthdayEdit" layoutX="191.0" layoutY="187.0" />
+      <TextField fx:id="accessEdit" layoutX="247.0" layoutY="439.0" />
+      <TextField fx:id="fireEdit" layoutX="247.0" layoutY="473.0" />
+      <Label fx:id="errorLabel" layoutX="370.0" layoutY="533.0" prefHeight="17.0" prefWidth="219.0" />
+    </children>
+</AnchorPane>
